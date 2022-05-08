@@ -1,0 +1,481 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body{
+    font-family: 'Quicksand', sans-serif; 
+    margin:0;
+}
+nav{
+    height:7%;
+    width:100%;
+    position:fixed;/* Da navigacija ostane na vrhu tokom skrolanja kroz stranicu*/
+    padding-top:0;
+    text-align:center;
+    text-decoration:none;
+    
+}
+
+#container{
+    background-color:white;
+    width:100%;
+    height:1000%; 
+    text-align: center;
+    padding-top:20%;
+    font-size: 70px;
+    margin-bottom: 15%;
+   
+}
+.botuni_u_navigaciji{
+    height:100%;
+    background-color:white;
+    color:black;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-right-style:none;
+    float:right;
+    width:17%;
+    font-size:125%;
+}
+.botuni_u_navigaciji:hover{
+    background-color:grey;
+    color:rgb(245, 245, 245);
+    text-decoration: none;
+}
+.botuni_u_navigaciji:active{
+    background-color:rgb(85, 79, 79);
+    color:rgb(245, 245, 245);
+    text-decoration: none;
+}
+.avatari{ 
+    float:left;
+    background-color:white;
+    margin:10%;
+    width:13%;
+    opacity:1;
+    text-align:center;
+    
+}
+.avatari img:hover{
+   opacity:0.25;/*Slika se izbljedi da se vidi text*/
+   text-align:center;
+}
+.u_avatarima{
+    float:right;
+}
+.imena_o_nama{
+     transform: translate(50%,250%);/*transform:translate se koristi za pomicanje elementa*/
+     opacity:1;
+     position:absolute;
+}
+#O_nama{
+    font-family:"verdana";
+}
+#Antin_lik{
+    transform: translate(30%,300%);
+}
+#footer img{
+    align-self: center;
+    justify-self:center;
+    width:300px
+}
+#footer{
+    display:grid;
+    grid-template-columns: 33.33333% 33.33333% 33.33333%;
+    grid-template-rows: auto auto;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    background-color:black;
+    width:100%;
+    padding-bottom: 150px
+}
+#footer a{
+    text-decoration:none;
+    color:white;
+}
+#footer ul{
+    margin:0;
+    list-style-type:none;
+    padding:0;
+    font-size:18px;
+}
+#desna_slika_u_footeru{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end: 2;
+}
+#logo_footer{
+    height: 300px;
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end: 2
+}
+@media (max-width: 800px){
+    #footer{
+        display:block;
+        height:100%
+    }
+}
+#ispod_containera{
+    background-image: url("../slike/rimac/slika_pozadine_rimac.jpg");
+    text-align: center;
+    width:100%;
+    height:100vh;
+    color:black;
+    font-size:200%;
+    background-size: cover;
+    z-index:-9999;/*Služi da slika bude iza teksta*/
+    position:relative;
+}
+.botuni_za_auto{
+    height:200%;
+    background-color:white;
+    color:black;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-right-style:none;
+    float:left;
+    width:25%;/* da 4 botuna prekriju cijelu navigaciju*/
+    font-size:125%;
+}
+.avatari img{
+    width:100%;
+    height:100%;
+}
+  .dropdown-content {
+    margin-top:0.8%;
+    display: none;
+    position: absolute;/*Da ide zajedno sa navigacijon pri skrolanju*/
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;/*Uzdignuto obzirom na sliku*/
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .botun_za_dropdown:hover .dropdown-content {
+    display: block;
+  }
+#misto_za_tekst{
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform:translate(-50%, -50%);
+     margin:0PX;
+     background-color:white;
+     width:50%;
+     visibility:hidden;
+     opacity:0.7;
+     padding: 60px 20px 60px 20px;/*Gore Desno Dolje Lijevo*/
+     font-size:28px;
+}
+#logo{
+    height:150%;
+    transform:translate(0,-15%)
+}
+#za_logo:hover{
+    background-color:grey;
+}
+#za_logo{
+    height:100%;
+    background-color:white;
+}
+.podatci_o_trenutnom_stanju{
+    height:20%;
+    background-color:white;
+    color:black;
+    font-size:300%;
+    padding-top:7%;
+    text-align:center;
+}
+
+.botuni_u_podatcima{
+    background-color:black;
+    color: white;
+    height:7%;
+    border-style:none;
+    font-size:100%;
+    border-radius:30px;/*Rubovi postanu zaobljeni*/
+    padding:10px;
+}
+.botuni_u_podatcima:hover{
+    background-color:white;
+    color:black;
+    text-decoration:none;
+}
+#slideshow{
+    height:80%;
+    width:100%;
+}
+#za_listu{
+    background-color:white;
+    width:10%;
+    height:100%;
+    margin-top:0%;
+    margin-left:0%;
+    float:left;
+    padding-top:10%;
+}
+.klikni_na_sliku{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -220%);
+    font-family:"verdana";
+    font-size:130%;
+}
+
+#container_o_nama{
+    padding-top:100px;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    text-align:center;
+    margin-bottom:50px;
+}
+.slike_o_nama{
+    justify-self:center;
+    align-self:center;
+    width:300px;
+}
+#tekst_za_mobitele{
+    font-size:0
+}
+@media(max-width:800px){
+    #container_o_nama{
+        display:block;
+        padding-top:50px;
+    }
+    #tekst_o_nama{
+        color:white;
+    }
+    #tekst_za_mobitele{
+        font-size:20px;
+        padding-top:100px;
+        text-align:center;
+    }
+
+
+}
+#tekst_o_nama{
+    margin-bottom:50px;
+    text-align:center;
+    font-size:25px;
+    grid-column-start:1;
+    grid-column-end: 4;
+    align-self:center;
+    justify-self:center;
+    
+}
+@keyframes slika_nastaje {
+    0%   {left: 83%;opacity:0;}
+    20% {left: 83%;opacity:0;}
+    20.5% {left: 83%;opacity:1;transform:rotate(20deg)}/*Nakon što auto udari u sliku ona se zanjiše*/
+    29.75%{left: 83%;opacity:1;transform:rotate(-20deg)}
+    40%{left: 83%;opacity:1;transform:rotate(0deg)}
+    100%{left: 83%;opacity:1;transform:rotate(0deg)}
+  }
+@keyframes auto_ide {
+    0% {left: 0%;}
+    5% {left: 15%;}
+    10%{left:0%;}
+    20.5%{left:71%;}
+    29.75%{left:60%;}/*Da se auto vrati malo natrag nakon što "udari" u sliku*/
+    40%{left:71%;}
+    90%{left:71%;}
+    100%{left:0%;}
+    
+
+}
+#container_auto{
+    font-size: 70px;
+}
+#fun_fact{
+    height:225px;
+    font-size:20px;
+    width:200px;
+    background:black;
+    color:white;
+    position :relative;
+    animation: slika_nastaje 10s infinite;/*Ime animacije, trajanje jednog kruga i broj ponavljanja*/
+    border-radius:25px;
+    animation-play-state: running;
+    text-align:Center;
+    
+}
+#auto_za_efekt{
+    position :relative;
+    width:10%;
+    animation: auto_ide 10s infinite;
+    animation-iteration-count:infinite;/*Efekt se stalno ponavlja*/
+    float:left;
+    transform:translateY(-150px);/*Pomicanje elementa po Y-osi*/
+}
+#sudar_auta{
+    transform:translateY(-150px);
+}
+.tekst_trenutno_stanje{
+    padding-right:30px;
+    padding-left:30px;
+}
+.prednosti_i_mane{
+    width:44.6%;
+    height:100%;
+    background-color:white;
+    margin-left:0px;
+    margin-top:0px;
+    height:350px;
+    text-align:left;
+    padding-left:30px;
+    padding-right:50px;
+    font-size:22px;
+
+}
+#prednosti{
+    text-align:start;
+    float:right;
+    margin-left:0px;
+    border-left-style:solid;
+}
+#mane{
+    text-align:right;
+}
+.u_prednostima{
+    text-align:left;
+}
+@keyframes slova_lete_prednosti {
+    0%{left:0%;}
+    50%{left:10%;}
+    55%{left:-40%;letter-spacing:0px;/*Ako ne stavimo da je razmak 0 korak prije onda se slova odmah pocnu udaljavat*/}
+    75%{left:0%;letter-spacing:30px;/*Slova se udalje jedno od drugoga*/}
+    90%{left:0%;letter-spacing:30px;}
+    100%{left:25%;letter-spacing:0px;}
+    
+
+
+}
+.slova_za_prednosti{
+    color:red;
+    animation: slova_lete_prednosti 5s forwards;
+    position:relative;
+}
+@keyframes slova_lete_nedostaci {
+    0%{left:3%;}
+    50%{left:-5%;}
+    55%{left:45%;letter-spacing:0px;}   
+    75%{left:5%;letter-spacing:25px;}
+    90%{left:5%;letter-spacing:25px;}
+    100%{left:-25%;letter-spacing:0px;}
+    
+
+
+}
+.slova_za_nedostaci{
+    color:red;
+    animation: slova_lete_nedostaci 5s forwards;
+    position:relative;
+    transform:translateX(-60px);
+    text-align:start;
+    
+}
+#utjecaj_okolis{
+    font-size:25px;
+    margin-top:100px;
+    padding-left:30px;
+    padding-right:30px;
+    background-size:cover;
+
+}
+/*stranica igre.html*/
+#container_igre{
+    text-align:center;
+    padding-top:100px;
+}
+@media (max-width:800px){
+    #container_igre{
+        display:none
+    }
+}
+#gorivo{
+    /* flexbox je koristan za responzivnost stranice jer on dinamicno pokrece svoju "djecu" po zadanim parametrima npr flex-direction */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px
+}
+#rezervoar {
+    position: relative;
+    background-image: url("slike/gorivo.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y:50%;
+    width: 30vh;
+    height: 50vh;
+    border: 5px solid #000;
+    border-radius: 15px;
+}
+#gorivo button{
+    font-size: 20px;
+    height: 2em;
+    width: 12.5em;
+    margin:5px 0;
+}
+#postotak{
+    border: 3px solid #000;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+#stupac{
+    z-index:-5 ; /*z-index mice predmet u "prostoru" na stranici i stvara prioritet*/
+    background: rgb(122, 19, 19);
+    position: absolute;
+    bottom: 0%;
+    transition: height 0.8s cubic-bezier(0.3, 0, 1, 1); /*ovom funkcijom definiramo kako ce rasti stupac kada mu se dogodi promijena visinni */
+}
+#vrh_text{
+    font-size: 20px;
+}
+#upute{
+    position:relative;
+    border:3px solid red;
+    width:676px;
+    margin:auto
+}
+#text{
+    margin-top:50px;
+    border:2px solid red;
+    margin-bottom:50px;
+    padding:5px;
+    max-width:700px;
+    font-size: 22px;
+}
+#text2{
+    border: 5px solid green;
+    margin-top:20px;    
+    margin-bottom:100px;
+    max-width:800px
+}
+#text2 p{
+    font-size: 22px;
+    word-wrap: break-word;
+    margin-left:10px;
+    margin-right: 10px
+}
+#brzina{
+    padding-bottom: 100px
+}

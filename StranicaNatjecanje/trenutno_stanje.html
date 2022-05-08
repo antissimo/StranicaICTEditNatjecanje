@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trenutno stanje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+<body>
+
+<nav>
+
+  <button class="botuni_u_navigaciji" onclick="window.location.href='igre.html'" >Igre</button>
+
+  <button class="botun_za_dropdown botuni_u_navigaciji" >Trenutno stanje 
+
+    <div class="dropdown-content" >
+
+      <a href="#ispod_containera" onmouseover="Cijena()">Cijena</a>
+      <a href="#ispod_containera" onmouseover="Potrošnja()">Potrošnja</a>
+      <a href="#ispod_containera"  onmouseover="Sigurnost()">Sigurnost</a>
+      <a href='#punionice_u_hrvatskoj'>Česta pitanja</a>
+
+    </div>
+    
+  </button>
+
+  <button class="botuni_u_navigaciji"  onclick="window.location.href='utjecaj_na_okolis.html'" >Utjecaj na okoliš</button>
+  <button class="botuni_u_navigaciji" onclick="window.location.href='o_nama.html'">O nama</button>
+  <button class="botuni_u_navigaciji" onclick="window.location.href='pocetna.html'" >Početna</button>
+
+
+  <div id="za_logo" onclick="window.location.href='pocetna.html'"><img src="slike/logo/lab logo crno.png" id="logo" ></div>
+  
+</nav>
+
+<div class="aniview" data-av-animation="slideInRight"></div>
+<div id="ispod_containera" >
+  <div id="misto_za_tekst" data-aos="fade-up" >
+    <p id="tekst_za_minjat"></p>
+  </div>
+</div>
+
+<div class="podatci_o_trenutnom_stanju aniview" data-av-animation="fadeIn" id="punionice_u_hrvatskoj"><button class="botuni_u_podatcima" onclick="punionice()">Koliko ima punionica u hrvatskoj?</button><p id="punionice2" class="tekst_trenutno_stanje"></p></div>
+<div class="podatci_o_trenutnom_stanju aniview" data-av-animation="fadeIn" id="tko_je_smislio"> <button class="botuni_u_podatcima" onclick="izumitelj()" >Tko je smislio električne automobile?</button><p id="izumitelj2" class="tekst_trenutno_stanje"></p></div> 
+<div class="podatci_o_trenutnom_stanju aniview" data-av-animation="fadeIn" id="sta_je_isplativije"><button class="botuni_u_podatcima" onclick="isplativost()">Koliko daleko mogu ići sa jednom punom baterijom?</button><p id="isplative2" class="tekst_trenutno_stanje"></p></div>                                  
+<div class="podatci_o_trenutnom_stanju aniview" data-av-animation="fadeIn" id="brzina"><button class="botuni_u_podatcima" onclick="brzina()">Koliko dugo traju baterije?</button><p id="brzina2" class="tekst_trenutno_stanje"></p></div>
+
+<div id="footer">
+
+  <img src="slike/o_nama/sdz.png" id="lijeva_slika_u_footeru">
+
+  <ul>
+    <li>Projekti:</li>
+    <li><a href=" https://ci-sdz.hr/">Centar izvrsnosti iz prirodoslovlja</a></li>
+    <li><a href="https://www.ictzupanija.hr/">ICT</a></li>
+  </ul>
+
+  <img src="slike/logo/ict.png" id="desna_slika_u_footeru">
+
+  <ul>
+    <li>Projekti:</li>
+    <li><a href="https://www.ictzupanija.hr/edit">Edit</a></li>
+    <li><a href="https://www.ictzupanija.hr/gdstart">Grafički dizajn radionica</a></li>
+    <li><a href="https://mailchi.mp/5985fe9af08e/pics">PICS</a></li>
+    <li><a href="https://www.ictzupanija.hr/ict-inkubator">IT centar</a></li>
+    <li><a href=" https://www.ictzupanija.hr/poslovanje">IT poduzetništvo</a></li>
+  </ul>
+
+  <img src="slike/logo/bijeli_logo.png" id="logo_footer">
+
+  <ul>
+    <li>E-mail:</li>
+    <li><a href="mailto:borna.cotic@gmail.com">Borna Čotić</a> <li>
+    <li><a href="mailto:luka.ka003@gmail.com">Luka Katić</a> <li>
+    <li><a href="mailto:boskovicante1@gmail.com">Ante Bošković</a> <li>
+  </ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>O nama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<nav>
+
+  <button class="botuni_u_navigaciji" onclick="window.location.href='igre.html'" >Igre</button>
+
+  <button class="botun_za_dropdown botuni_u_navigaciji" onclick="window.location.href='trenutno_stanje.html'" >Trenutno stanje 
+
+    <div class="dropdown-content" >
+
+      <a  onmouseover="Cijena()">Cijena</a>
+      <a  onmouseover="Potrošnja()">Potrošnja</a>
+      <a  onmouseover="Sigurnost()">Sigurnost</a>
+      <a  href='#punionice_u_hrvatskoj'>Česta pitanja</a>
+
+    </div>
+    
+  </button>
+
+  <button class="botuni_u_navigaciji"  onclick="window.location.href='utjecaj_na_okolis.html'" >Utjecaj na okoliš</button>
+  <button class="botuni_u_navigaciji" onclick="window.location.href='o_nama.html'">O nama</button>
+  <button class="botuni_u_navigaciji" onclick="window.location.href='pocetna.html'" >Početna</button>
+
+
+  <div id="za_logo" onclick="window.location.href='pocetna.html'"><img src="slike/logo/lab logo crno.png" id="logo" ></div>
+  
+</nav>
+<p id="tekst_za_mobitele">Stisnite jednu od slika pa će se dolje promijeniti tekst</p>
+
+<div id="container_o_nama">
+
+  <img src ="slike/o_nama/sahovska_figura.png"  class="slike_o_nama" onmouseenter="BornaCotic()" onmouseleave="Vrati()">
+  <img src ="slike/o_nama/kod.png" class="slike_o_nama" onmouseenter="LukaKatic()" onmouseleave="Vrati()">
+  <img src ="slike/o_nama/plazma.png"  class="slike_o_nama" onmouseenter="AnteBoskovic()" onmouseleave="Vrati()">
+  
+  <p id="tekst_o_nama">Pređite preko slika da se pojavi tekst</p>
+
+</div>
+
+
+
+<div id="footer">
+  <img src="slike\o_nama\sdz.png" id="lijeva_slika_u_footeru">
+  <ul>
+    <li>Projekti:</li>
+    <li><a href=" https://ci-sdz.hr/">Centar izvrsnosti iz prirodoslovlja</a></li>
+    <li><a href="https://www.ictzupanija.hr/">ICT</a></li>
+  </ul>
+
+  <img src="slike/logo/ict.png" id="desna_slika_u_footeru">
+
+  <ul>
+
+    <li>Projekti:</li>
+    <li><a href="https://www.ictzupanija.hr/edit">Edit</a></li>
+    <li><a href="https://www.ictzupanija.hr/gdstart">Grafički dizajn radionica</a></li>
+    <li><a href="https://mailchi.mp/5985fe9af08e/pics">PICS</a></li>
+    <li><a href="https://www.ictzupanija.hr/ict-inkubator">IT centar</a></li>
+    <li><a href=" https://www.ictzupanija.hr/poslovanje">IT poduzetništvo</a></li>
+
+  </ul>
+
+  <img src="slike/logo/bijeli_logo.png" id="logo_footer">
+
+  <ul>
+
+    <li>E-mail:</li>
+    <li><a href="mailto:borna.cotic@gmail.com">Borna Čotić</a> <li>
+    <li><a href="mailto:luka.ka003@gmail.com">Luka Katić</a> <li>
+    <li><a href="mailto:boskovicante1@gmail.com">Ante Bošković</a> <li>
+
+  </ul>
+
+</div>
+
+</body>
+</html>

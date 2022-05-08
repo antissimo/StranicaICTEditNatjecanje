@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Utjecaj na okoliš</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body onload="promijeni_zanimljivost()">
+  <nav>
+
+    <button class="botuni_u_navigaciji" onclick="window.location.href='igre.html'">Igre</button>
+
+    <button class="botun_za_dropdown botuni_u_navigaciji" onclick="window.location.href='trenutno_stanje.html'">Trenutno
+      stanje
+
+      <div class="dropdown-content">
+
+        <a onmouseover="Cijena()">Cijena</a>
+        <a onmouseover="Potrošnja()">Potrošnja</a>
+        <a onmouseover="Sigurnost()">Sigurnost</a>
+        <a href='#punionice_u_hrvatskoj'>Česta pitanja</a>
+
+      </div>
+
+    </button>
+
+    <button class="botuni_u_navigaciji" onclick="window.location.href='utjecaj_na_okolis.html'">Utjecaj na
+      okoliš</button>
+    <button class="botuni_u_navigaciji" onclick="window.location.href='o_nama.html'">O nama</button>
+    <button class="botuni_u_navigaciji" onclick="window.location.href='pocetna.html'">Početna</button>
+
+
+    <div id="za_logo" onclick="window.location.href='pocetna.html'"><img src="slike/logo/lab logo crno.png" id="logo">
+    </div>
+
+  </nav>
+  <div id="container">
+
+
+
+
+
+    <div id="prednosti" class="prednosti_i_mane"><span class="slova_za_prednosti">P</span><span
+        class="slova_za_prednosti">r</span><span class="slova_za_prednosti">e</span><span
+        class="slova_za_prednosti">d</span><span class="slova_za_prednosti">n</span><span
+        class="slova_za_prednosti">o</span><span class="slova_za_prednosti">s</span><span
+        class="slova_za_prednosti">t</span><span class="slova_za_prednosti">i</span>
+      <!-- Moramo koristiti spanove da sve stane u jedan red -->
+
+
+
+
+
+
+
+
+
+
+
+
+      <p class="u_prednostima">Nema ispušnih plinova</p>
+      <p class="u_prednostima">Puno veći potencijal za napredak</p>
+      <p class="u_prednostima">Usporava" globalno zatopljenje</p>
+      <p class="u_prednostima">Čak ako se struja dobiva isključivo iz fosilnih goriva električna auta su još uvijek
+        "zelenija"</p>
+    </div>
+    <div id="mane" class="prednosti_i_mane"><span class="slova_za_nedostaci">N</span><span
+        class="slova_za_nedostaci">e</span><span class="slova_za_nedostaci">d</span><span
+        class="slova_za_nedostaci">o</span><span class="slova_za_nedostaci">s</span><span
+        class="slova_za_nedostaci">t</span><span class="slova_za_nedostaci">a</span><span
+        class="slova_za_nedostaci">t</span><span class="slova_za_nedostaci">c</span><span
+        class="slova_za_nedostaci">i</span>
+      <p id="u_manama">Ukoliko električna energija nije proizvedena iz obnovljivih izvora energije još više naštećuju
+        okolišu</p>
+      <p id="u_manama">Pri proizvođenju se ispusti skoro duplo više ispušnih plinova</p>
+      <p id="u_manama">Baterije nepropisno odložene mogu jako naštetiti okolišu</p>
+
+
+
+    </div>
+
+    <div id="utjecaj_okolis">
+      Električni automobili kreću se cestama bez da pritom u atmosferu ispuštaju štetne stakleničke plinove i bez da
+      zagađuju zrak u gradovima. To je činjenica koja se oduvijek kao nesumnjivo pozitivna vezala uz automobile na
+      elektropogon, no skeptici su isticali kako učinak elektrifikacije prometa možda i nije toliko pozitivan. Jedan od
+      osnovnih argumenata za to im je činjenica da dio struje kojom se ovakva vozila pune dolazi iz ne baš "zelenih"
+      elektrana, te da u procesu proizvodnje vozila postoje procesi koji i dalje zagađuju okoliš.<br>
+
+      Početkom tog ciklusa, za vrijeme proizvodnje, emisije štetnih plinova tipično su nešto više, ali nulto ispuštanje
+      plinova tijekom korištenja i više nego kompenzira ove štetne učinke.<br>
+
+      Trenutačno ovaj neto pozitivan učinak na okoliš mjeri od 17 do 30% manje zagađenje u odnosu na automobile s
+      motorima s unutarnjim sagorijevanjem, s tim da on eksponencijalno raste – i to u skladu s porastom proizvodnje
+      električne energije iz obnovljivih izvora u Europi. Do 2050. godine smanjenje zagađenja tijekom životnog ciklusa
+      električnih vozila trebalo bi iznositi najmanje 73%.
+    </div>
+  </div>
+  <div id="container_auto">
+    <div id="sudar_auta">
+      <div id="fun_fact">ZANIMLJIVOST<br>
+        <p id="zanimljivost_za_minjat">Trenutno najbrži auto na svijetu je električan, i osmislio ga je hrvatski poduzetnik Mate Rimac</p>
+      </div><img src="slike/ostalo/auto_za_efekt.jpg" id="auto_za_efekt">
+    </div>
+  </div>
+  <div id="footer">
+    <img src="slike\o_nama\sdz.png" id="lijeva_slika_u_footeru">
+    <ul>
+      <li>Projekti:</li>
+      <li><a href=" https://ci-sdz.hr/">Centar izvrsnosti iz prirodoslovlja</a></li>
+      <li><a href="https://www.ictzupanija.hr/">ICT</a></li>
+    </ul>
+
+    <img src="slike/logo/ict.png" id="desna_slika_u_footeru">
+
+    <ul>
+      <li>Projekti:</li>
+      <li><a href="https://www.ictzupanija.hr/edit">Edit</a></li>
+      <li><a href="https://www.ictzupanija.hr/gdstart">Grafički dizajn radionica</a></li>
+      <li><a href="https://mailchi.mp/5985fe9af08e/pics">PICS</a></li>
+      <li><a href="https://www.ictzupanija.hr/ict-inkubator">IT centar</a></li>
+      <li><a href=" https://www.ictzupanija.hr/poslovanje">IT poduzetništvo</a></li>
+    </ul>
+
+    <img src="slike/logo/bijeli_logo.png" id="logo_footer">
+
+    <ul>
+      <li>E-mail:</li>
+      <li><a href="mailto:borna.cotic@gmail.com">Borna Čotić</a>
+      <li>
+      <li><a href="mailto:luka.ka003@gmail.com">Luka Katić</a>
+      <li>
+      <li><a href="mailto:boskovicante1@gmail.com">Ante Bošković</a>
+      <li>
+    </ul>
+  </div>
+</body>
+
+</html>

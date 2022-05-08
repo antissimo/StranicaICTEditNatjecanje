@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Igre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/igra.js"></script>
+</head>
+<body>
+<nav>
+
+  <button class="botuni_u_navigaciji" onclick="window.location.href='igre.html'" >Igre</button>
+
+  <button class="botun_za_dropdown botuni_u_navigaciji" onclick="window.location.href='trenutno_stanje.html'" >Trenutno stanje 
+
+    <div class="dropdown-content" >
+
+      <a  onmouseover="Cijena()">Cijena</a>
+      <a  onmouseover="Potrošnja()">Potrošnja</a>
+      <a  onmouseover="Sigurnost()">Sigurnost</a>
+      <a  href='#punionice_u_hrvatskoj'>Česta pitanja</a>
+
+    </div>
+    
+  </button>
+
+  <button class="botuni_u_navigaciji"  onclick="window.location.href='utjecaj_na_okolis.html'" >Utjecaj na okoliš</button>
+  <button class="botuni_u_navigaciji" onclick="window.location.href='o_nama.html'">O nama</button>
+  <button class="botuni_u_navigaciji" onclick="window.location.href='pocetna.html'" >Početna</button>
+
+
+  <div id="za_logo" onclick="window.location.href='pocetna.html'"><img src="slike/logo/lab logo crno.png" id="logo" ></div>
+  
+</nav>
+<div id="container_igre">
+<div id="upute">1.Za početak igre pričekajte par sekundi da se pojave auta<br>2.Mičite se strelicama na tipkovnici da izbjegnete auta <br>3.Cij igre je preći cestu<br>4.Za ponovno pokretanje igre kliknite mišem na igru</div>
+<style>
+  #upute{
+    font-size:25px;
+  }
+</style>
+
+</div>  
+
+<div id="gorivo">
+  <div id="text">
+     Unesite koliko litara benzina će auto koristiti (rezervoar je pun sa 50l) i klikom gumba će se usporediti sa potrošnjom električnog auta.
+  </div>
+ <div>
+
+    <input type="number" id="postotak" placeholder="0-50 litara" oninput="gorivo()">
+
+  </div>   
+
+  <button type="submit" onclick="predaj()" >Predaj</button>
+
+  <div id="rezervoar"> 
+
+    <div id="stupac"></div>
+
+  </div>
+
+  <div id="text2">
+    
+    <p>Sa <span id="litre">__</span> litara benzina mozemo proizvesti <span id="energija">__</span> energije s kojom bi mogli prijeći <span id="udaljenost_benzin">__</span>kilometara sa benzinskim autom, dok sa električnim autom bi mogli prijeći <span id="udaljenost_elektricni">__</span> zato što je korisnost motora znatno veća.</p>
+
+  </div>
+
+</div>  
+ 
+
+<div id="footer">
+  <img src="slike\o_nama\sdz.png" id="lijeva_slika_u_footeru">
+  <ul>
+    <li>Projekti:</li>
+    <li><a href=" https://ci-sdz.hr/">Centar izvrsnosti iz prirodoslovlja</a></li>
+    <li><a href="https://www.ictzupanija.hr/">ICT</a></li>
+  </ul>
+      
+  <img src="slike/logo/ict.png" id="desna_slika_u_footeru">
+     
+  <ul>
+    <li>Projekti:</li>
+    <li><a href="https://www.ictzupanija.hr/edit">Edit</a></li>
+    <li><a href="https://www.ictzupanija.hr/gdstart">Grafički dizajn radionica</a></li>
+    <li><a href="https://mailchi.mp/5985fe9af08e/pics">PICS</a></li>
+    <li><a href="https://www.ictzupanija.hr/ict-inkubator">IT centar</a></li>
+    <li><a href=" https://www.ictzupanija.hr/poslovanje">IT poduzetništvo</a></li>
+  </ul>
+     
+  <img src="slike/logo/bijeli_logo.png" id="logo_footer">
+     
+  <ul>
+    <li>E-mail:</li>
+    <li><a href="mailto:borna.cotic@gmail.com">Borna Čotić</a> <li>
+    <li><a href="mailto:luka.ka003@gmail.com">Luka Katić</a> <li>
+    <li><a href="mailto:boskovicante1@gmail.com">Ante Bošković</a> <li>
+  </ul>
+
+</div>
+
+</body>
+</html>
